@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="カタカナ"
+            android:textStyle="bold"
+            android:textColor="@color/deep_orange"
+            android:padding="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/dark2"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- Header -->
+            <TableRow>
+
+                <TextView style="@style/AlphabetHeader" android:text="" />
+                <TextView style="@style/AlphabetHeader" android:text="a" />
+                <TextView style="@style/AlphabetHeader" android:text="i" />
+                <TextView style="@style/AlphabetHeader" android:text="u" />
+                <TextView style="@style/AlphabetHeader" android:text="e" />
+                <TextView style="@style/AlphabetHeader" android:text="o" />
+            </TableRow>
+
+            <!-- Katakana rows -->
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="a-" />
+                <TextView style="@style/AlphabetCell" android:text="ア\na" />
+                <TextView style="@style/AlphabetCell" android:text="イ\ni" />
+                <TextView style="@style/AlphabetCell" android:text="ウ\nu" />
+                <TextView style="@style/AlphabetCell" android:text="エ\ne" />
+                <TextView style="@style/AlphabetCell" android:text="オ\no" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="k-" />
+                <TextView style="@style/AlphabetCell" android:text="カ\nka" />
+                <TextView style="@style/AlphabetCell" android:text="キ\nki" />
+                <TextView style="@style/AlphabetCell" android:text="ク\nku" />
+                <TextView style="@style/AlphabetCell" android:text="ケ\nke" />
+                <TextView style="@style/AlphabetCell" android:text="コ\nko" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="s-" />
+                <TextView style="@style/AlphabetCell" android:text="サ\nsa" />
+                <TextView style="@style/AlphabetCell" android:text="シ\nshi" />
+                <TextView style="@style/AlphabetCell" android:text="ス\nsu" />
+                <TextView style="@style/AlphabetCell" android:text="セ\nse" />
+                <TextView style="@style/AlphabetCell" android:text="ソ\nso" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="t-" />
+                <TextView style="@style/AlphabetCell" android:text="タ\nta" />
+                <TextView style="@style/AlphabetCell" android:text="チ\nchi" />
+                <TextView style="@style/AlphabetCell" android:text="ツ\ntsu" />
+                <TextView style="@style/AlphabetCell" android:text="テ\nte" />
+                <TextView style="@style/AlphabetCell" android:text="ト\nto" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="n-" />
+                <TextView style="@style/AlphabetCell" android:text="ナ\nna" />
+                <TextView style="@style/AlphabetCell" android:text="ニ\nni" />
+                <TextView style="@style/AlphabetCell" android:text="ヌ\nnu" />
+                <TextView style="@style/AlphabetCell" android:text="ネ\nne" />
+                <TextView style="@style/AlphabetCell" android:text="ノ\nno" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="h-" />
+                <TextView style="@style/AlphabetCell" android:text="ハ\nha" />
+                <TextView style="@style/AlphabetCell" android:text="ヒ\nhi" />
+                <TextView style="@style/AlphabetCell" android:text="フ\nfu" />
+                <TextView style="@style/AlphabetCell" android:text="ヘ\nhe" />
+                <TextView style="@style/AlphabetCell" android:text="ホ\nho" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="m-" />
+                <TextView style="@style/AlphabetCell" android:text="マ\nma" />
+                <TextView style="@style/AlphabetCell" android:text="ミ\nmi" />
+                <TextView style="@style/AlphabetCell" android:text="ム\nmu" />
+                <TextView style="@style/AlphabetCell" android:text="メ\nme" />
+                <TextView style="@style/AlphabetCell" android:text="モ\nmo" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="y-" />
+                <TextView style="@style/AlphabetCell" android:text="ヤ\nya" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="ユ\nyu" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="ヨ\nyo" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="r-" />
+                <TextView style="@style/AlphabetCell" android:text="ラ\nra" />
+                <TextView style="@style/AlphabetCell" android:text="リ\nri" />
+                <TextView style="@style/AlphabetCell" android:text="ル\nru" />
+                <TextView style="@style/AlphabetCell" android:text="レ\nre" />
+                <TextView style="@style/AlphabetCell" android:text="ロ\nro" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="w-" />
+                <TextView style="@style/AlphabetCell" android:text="ワ\nwa" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="ヲ\nwo" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView style="@style/AlphabetHeader" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="ン\nn" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+                <TextView style="@style/AlphabetCell" android:text="" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

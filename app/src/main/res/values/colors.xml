@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#3C3C3C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="sage">#B6C7AA</color>
+    <color name="light_cream">#F6E6CB</color>
+    <color name="beige">#E7D4B5</color>
+    <color name="light_brown">#A0937D</color>
+    <color name="red">#F44336</color>
+    <color name="light_red">#FF7377</color>
+    <color name="darkmode">#262626</color> <!-- Văn bản đen trên nền trắng -->
+    <color name="orange_button">#FF9800</color>
+    <color name="deep_orange">#A84729</color>
+    <color name="ripple_color">#33FFFFFF</color>
+    <color name="sand">#D6B588</color>
+    <color name="dark">#2A2323</color>
+    <color name="dark2">#2F2926</color>
+    <color name="lemon">#FFF9C4</color>
+    <color name="indigo_blue">#3F51B5</color>
+</resources>

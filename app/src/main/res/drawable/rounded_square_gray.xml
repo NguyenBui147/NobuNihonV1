@@ -1,0 +1,9 @@
+<!-- res/drawable/rounded_square.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Chỉ bo góc, KHÔNG dùng <solid> -->
+    <corners android:radius="16dp" />
+    <solid android:color="#80CCCCCC"/>
+
+</shape>
