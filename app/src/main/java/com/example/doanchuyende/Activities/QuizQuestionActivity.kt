@@ -1,6 +1,6 @@
 package com.example.doanchuyende.Activities
 
-import android.graphics.Color
+
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Button
@@ -11,7 +11,7 @@ import com.example.doanchuyende.Models.Question
 import com.example.doanchuyende.R
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.example.doanchuyende.Database.QuizDatabaseHelper
-import androidx.core.content.ContextCompat
+
 
 class QuizQuestionActivity : AppCompatActivity() {
     private lateinit var questionIndicator: TextView
@@ -28,10 +28,11 @@ class QuizQuestionActivity : AppCompatActivity() {
     private var selectedAnswer = -1
     private var score = 0
     private var timer: CountDownTimer? = null
-    private val totalTime = 5 * 60 * 1000L
-    private var timeLeft = totalTime
+    private var totalTime: Long = 5 * 60 * 1000L // Default 5 minutes
+    private var timeLeft: Long = totalTime
     private lateinit var quizId: String
     private lateinit var quizTitle: String
+
 
     private lateinit var questions: List<Question>
 
@@ -41,7 +42,15 @@ class QuizQuestionActivity : AppCompatActivity() {
 
         quizId = intent.getStringExtra("QUIZ_ID") ?: "1"
         quizTitle = intent.getStringExtra("QUIZ_TITLE") ?: "Quiz"
+
         supportActionBar?.title = quizTitle
+
+        // Set time limit based on quiz type
+        totalTime = when (quizId) {
+            "3" -> 10 * 60 * 1000L
+            else -> 5 * 60 * 1000L
+        }
+        timeLeft = totalTime
 
         val dbHelper = QuizDatabaseHelper(this)
         questions = dbHelper.getRandomQuestionSet(quizId)
@@ -129,7 +138,11 @@ class QuizQuestionActivity : AppCompatActivity() {
             showQuestion()
         } else {
             timer?.cancel()
-            Toast.makeText(this, "Hoàn thành! Điểm của bạn: $score/${questions.size}", Toast.LENGTH_LONG).show()
+            Toast.makeText(
+                this,
+                "Hoàn thành! Điểm của bạn: $score/${questions.size}",
+                Toast.LENGTH_LONG
+            ).show()
             finish()
         }
     }
@@ -142,8 +155,13 @@ class QuizQuestionActivity : AppCompatActivity() {
                 val seconds = (timeLeft / 1000) % 60
                 timerTextView.text = String.format("%d:%02d", minutes, seconds)
             }
+
             override fun onFinish() {
-                Toast.makeText(this@QuizQuestionActivity, "Hết giờ! Điểm của bạn: $score/${questions.size}", Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this@QuizQuestionActivity,
+                    "Hết giờ! Điểm của bạn: $score/${questions.size}",
+                    Toast.LENGTH_LONG
+                ).show()
                 finish()
             }
         }.start()

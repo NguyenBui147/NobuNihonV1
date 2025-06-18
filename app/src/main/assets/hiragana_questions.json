@@ -1,0 +1,12 @@
+[
+  { "question": "Hiragana của 'a' là gì?", "options": ["あ", "い", "う", "え"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'i' là gì?", "options": ["い", "え", "あ", "う"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'u' là gì?", "options": ["う", "あ", "お", "え"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'e' là gì?", "options": ["え", "お", "あ", "い"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'o' là gì?", "options": ["お", "う", "え", "あ"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'ka' là gì?", "options": ["か", "き", "く", "け"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'ki' là gì?", "options": ["き", "け", "こ", "く"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'ku' là gì?", "options": ["く", "け", "こ", "か"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'ke' là gì?", "options": ["け", "か", "く", "こ"], "correctAnswer": 0 },
+  { "question": "Hiragana của 'ko' là gì?", "options": ["こ", "け", "か", "く"], "correctAnswer": 0 }
+]

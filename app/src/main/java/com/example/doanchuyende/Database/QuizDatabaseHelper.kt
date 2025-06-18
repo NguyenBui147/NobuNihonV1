@@ -7,6 +7,9 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import com.example.doanchuyende.Models.QuizModel
 import com.example.doanchuyende.Models.Question
+import org.json.JSONArray
+import org.json.JSONObject
+import java.io.IOException
 
 
 class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -20,6 +23,52 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         private const val COLUMN_TITLE = "title"
         private const val COLUMN_DESCRIPTION = "description"
         private const val COLUMN_DURATION = "duration"
+    }
+
+    // Lưu trữ câu hỏi trong memory thay vì database
+    private val hiraganaQuestions = mutableListOf<Question>()
+    private val katakanaQuestions = mutableListOf<Question>()
+    private val kanjiQuestions = mutableListOf<Question>()
+    private val vocabularyQuestions = mutableListOf<Question>()
+
+    init {
+        // Load câu hỏi từ JSON khi khởi tạo
+        loadAllQuestions(context)
+    }
+
+    private fun loadAllQuestions(context: Context) {
+        loadQuestionsFromJson(context, "hiragana_questions.json", hiraganaQuestions)
+        loadQuestionsFromJson(context, "katakana_questions.json", katakanaQuestions)
+        loadQuestionsFromJson(context, "kanji_questions.json", kanjiQuestions)
+
+    }
+
+    private fun loadQuestionsFromJson(context: Context, fileName: String, questionList: MutableList<Question>) {
+        try {
+            val jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
+            val jsonArray = JSONArray(jsonString)
+            
+            for (i in 0 until jsonArray.length()) {
+                val jsonObject = jsonArray.getJSONObject(i)
+                val question = Question(
+                    id = i,
+                    question = jsonObject.getString("question"),
+                    options = listOf(
+                        jsonObject.getJSONArray("options").getString(0),
+                        jsonObject.getJSONArray("options").getString(1),
+                        jsonObject.getJSONArray("options").getString(2),
+                        jsonObject.getJSONArray("options").getString(3)
+                    ),
+                    correctAnswer = jsonObject.getInt("correctAnswer")
+                )
+                questionList.add(question)
+            }
+            Log.d("Database", "Loaded ${jsonArray.length()} questions from $fileName")
+        } catch (e: IOException) {
+            Log.e("Database", "Error reading JSON file $fileName: ${e.message}")
+        } catch (e: Exception) {
+            Log.e("Database", "Error parsing JSON file $fileName: ${e.message}")
+        }
     }
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -131,99 +180,35 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
 
 
     fun getRandomQuestionSet(quizId: String): List<Question> {
-        val setNumber = 1 // Luôn lấy set 1 vì chỉ có 1 set duy nhất
-        val questions = mutableListOf<Question>()
-        val db = readableDatabase
-        val cursor = db.rawQuery(
-            "SELECT * FROM question WHERE quiz_id = ? AND set_number = ?",
-            arrayOf(quizId, setNumber.toString())
-        )
-        if (cursor.moveToFirst()) {
-            do {
-                val q = Question(
-                    id = cursor.getInt(cursor.getColumnIndexOrThrow("id")),
-                    question = cursor.getString(cursor.getColumnIndexOrThrow("question_text")),
-                    options = listOf(
-                        cursor.getString(cursor.getColumnIndexOrThrow("option1")),
-                        cursor.getString(cursor.getColumnIndexOrThrow("option2")),
-                        cursor.getString(cursor.getColumnIndexOrThrow("option3")),
-                        cursor.getString(cursor.getColumnIndexOrThrow("option4")),
-                    ),
-                    correctAnswer = cursor.getInt(cursor.getColumnIndexOrThrow("correct_answer"))
-                )
-                questions.add(q)
-            } while (cursor.moveToNext())
+        val questions = when (quizId) {
+            "1" -> hiraganaQuestions
+            "2" -> katakanaQuestions
+            "3" -> kanjiQuestions
+            "4" -> vocabularyQuestions
+            else -> emptyList()
         }
-        cursor.close()
-        return questions
-    }
-
-    fun addQuestion(question: Question, quizId: String, setNumber: Int) {
-        try {
-            val db = writableDatabase
-            val values = ContentValues().apply {
-                put("quiz_id", quizId)
-                put("set_number", setNumber)
-                put("question_text", question.question)
-                put("option1", question.options[0])
-                put("option2", question.options[1])
-                put("option3", question.options[2])
-                put("option4", question.options[3])
-                put("correct_answer", question.correctAnswer)
-            }
-            val result = db.insert("question", null, values)
-            if (result != -1L) {
-                Log.d("Database", "Question added successfully: ${question.question}")
-            } else {
-                Log.e("Database", "Failed to add question: ${question.question}")
-            }
-        } catch (e: Exception) {
-            Log.e("Database", "Error adding question: ${e.message}")
-        }
-    }
-
-    fun insertSampleQuestions(context: Context) {
-        val dbHelper = QuizDatabaseHelper(context)
-        val sampleQuestions = listOf(
-            "Hiragana của 'a' là gì?" to listOf("あ", "い", "う", "え"),
-            "Hiragana của 'i' là gì?" to listOf("い", "え", "あ", "う"),
-            "Hiragana của 'u' là gì?" to listOf("う", "あ", "お", "え"),
-            "Hiragana của 'e' là gì?" to listOf("え", "お", "あ", "い"),
-            "Hiragana của 'o' là gì?" to listOf("お", "う", "え", "あ"),
-            "Hiragana của 'ka' là gì?" to listOf("か", "き", "く", "け"),
-            "Hiragana của 'ki' là gì?" to listOf("き", "け", "こ", "く"),
-            "Hiragana của 'ku' là gì?" to listOf("く", "け", "こ", "か"),
-            "Hiragana của 'ke' là gì?" to listOf("け", "か", "く", "こ"),
-            "Hiragana của 'ko' là gì?" to listOf("こ", "け", "か", "く"),
-            "Hiragana của 'sa' là gì?" to listOf("さ", "し", "す", "せ"),
-            "Hiragana của 'shi' là gì?" to listOf("し", "す", "せ", "そ"),
-            "Hiragana của 'su' là gì?" to listOf("す", "せ", "そ", "さ"),
-            "Hiragana của 'se' là gì?" to listOf("せ", "そ", "さ", "し"),
-            "Hiragana của 'so' là gì?" to listOf("そ", "さ", "し", "す"),
-            "Hiragana của 'ta' là gì?" to listOf("た", "ち", "つ", "て"),
-            "Hiragana của 'chi' là gì?" to listOf("ち", "つ", "て", "と"),
-            "Hiragana của 'tsu' là gì?" to listOf("つ", "て", "と", "た"),
-            "Hiragana của 'te' là gì?" to listOf("て", "と", "た", "ち"),
-            "Hiragana của 'to' là gì?" to listOf("と", "た", "ち", "つ"),
-            "Hiragana của 'na' là gì?" to listOf("な", "に", "ぬ", "ね"),
-            "Hiragana của 'ni' là gì?" to listOf("に", "ぬ", "ね", "の"),
-            "Hiragana của 'nu' là gì?" to listOf("ぬ", "ね", "の", "な"),
-            "Hiragana của 'ne' là gì?" to listOf("ね", "の", "な", "に"),
-            "Hiragana của 'no' là gì?" to listOf("の", "な", "に", "ぬ")
-        )
-
-        val quizId = "1" // Hiragana
-        val setNumber = 1 // Chỉ tạo 1 set duy nhất
         
-        // Lấy 10 câu hỏi random từ danh sách
-        sampleQuestions.shuffled().take(10).forEachIndexed { index, (text, options) ->
-            val question = Question(
-                id = 0,
-                question = text,
-                options = options,
-                correctAnswer = 0
-            )
-            dbHelper.addQuestion(question, quizId, setNumber)
+        // Random chọn câu hỏi từ danh sách có sẵn
+        return when (quizId) {
+            "3" -> { // Kanji Quiz: 20 câu hỏi
+                if (questions.size >= 20) {
+                    questions.shuffled().take(20)
+                } else {
+                    questions.shuffled()
+                }
+            }
+            else -> { // Các quiz khác: 10 câu hỏi
+                if (questions.size >= 10) {
+                    questions.shuffled().take(10)
+                } else {
+                    questions.shuffled()
+                }
+            }
         }
+    }
+
+    fun insertQuestions(context: Context) {
+        // Không cần làm gì vì câu hỏi đã được load trong init block
+        Log.d("Database", "Questions loaded from JSON files")
     }
 }

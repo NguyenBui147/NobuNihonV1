@@ -1,0 +1,22 @@
+[
+  { "question": "Kanji của 'nước' là gì?", "options": ["水", "火", "木", "山"], "correctAnswer": 0 },
+  { "question": "Kanji của 'trường học' là gì?", "options": ["学校", "学生", "大学", "先生"], "correctAnswer": 0 },
+  { "question": "Kanji của 'lửa' là gì?", "options": ["火", "水", "金", "木"], "correctAnswer": 0 },
+  { "question": "Kanji của 'người' là gì?", "options": ["人", "大", "中", "子"], "correctAnswer": 0 },
+  { "question": "Kanji của 'trời / thiên' là gì?", "options": ["天", "風", "空", "海"], "correctAnswer": 0 },
+  { "question": "Kanji của 'núi' là gì?", "options": ["山", "川", "森", "林"], "correctAnswer": 0 },
+  { "question": "Kanji của 'một' là gì?", "options": ["一", "二", "三", "十"], "correctAnswer": 0 },
+  { "question": "Kanji của 'gió' là gì?", "options": ["風", "雲", "雨", "雪"], "correctAnswer": 0 },
+  { "question": "Kanji của 'thời gian' là gì?", "options": ["時", "分", "日", "間"], "correctAnswer": 0 },
+  { "question": "Kanji của 'ngày / mặt trời' là gì?", "options": ["日", "月", "星", "空"], "correctAnswer": 0 },
+  { "question": "Kanji của 'nguyệt / mặt trăng' là gì?", "options": ["月", "日", "星", "空"], "correctAnswer": 0 },
+  { "question": "Kanji của 'kim / vàng / tiền' là gì?", "options": ["金", "木", "火", "水"], "correctAnswer": 0 },
+  { "question": "Kanji của 'cây' là gì?", "options": ["木", "林", "森", "山"], "correctAnswer": 0 },
+  { "question": "Kanji của 'trẻ em / con' là gì?", "options": ["子", "人", "母", "父"], "correctAnswer": 0 },
+  { "question": "Kanji của 'nữ' là gì?", "options": ["女", "男", "母", "子"], "correctAnswer": 0 },
+  { "question": "Kanji của 'nam' là gì?", "options": ["男", "女", "父", "兄"], "correctAnswer": 0 },
+  { "question": "Kanji của 'đi / đến' là gì?", "options": ["行", "来", "走", "出"], "correctAnswer": 0 },
+  { "question": "Kanji của 'ăn' là gì?", "options": ["食", "飲", "見", "話"], "correctAnswer": 0 },
+  { "question": "Kanji của 'nghe' là gì?", "options": ["聞", "見", "話", "読"], "correctAnswer": 0 },
+  { "question": "Kanji của 'sáng / ánh sáng' là gì?", "options": ["明", "昼", "光", "天"], "correctAnswer": 0 }
+]

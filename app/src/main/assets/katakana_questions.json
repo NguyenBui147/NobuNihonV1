@@ -1,0 +1,12 @@
+[
+  { "question": "Katakana của 'a' là gì?", "options": ["ア", "イ", "ウ", "エ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'i' là gì?", "options": ["イ", "エ", "ア", "ウ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'u' là gì?", "options": ["ウ", "オ", "エ", "イ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'e' là gì?", "options": ["エ", "イ", "ア", "オ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'o' là gì?", "options": ["オ", "ア", "エ", "ウ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'ka' là gì?", "options": ["カ", "キ", "ク", "ケ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'ki' là gì?", "options": ["キ", "カ", "ク", "ケ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'ku' là gì?", "options": ["ク", "ケ", "カ", "コ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'ke' là gì?", "options": ["ケ", "コ", "ク", "カ"], "correctAnswer": 0 },
+  { "question": "Katakana của 'ko' là gì?", "options": ["コ", "カ", "キ", "ケ"], "correctAnswer": 0 }
+]

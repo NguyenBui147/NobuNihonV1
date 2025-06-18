@@ -47,8 +47,8 @@ class QuizActivity : AppCompatActivity() {
         dbHelper.addQuiz(QuizModel("3", "Kanji Quiz", "Kiểm tra kiến thức về Kanji", "10 phút"))
         dbHelper.addQuiz(QuizModel("4", "Từ vựng Quiz", "Kiểm tra kiến thức về từ vựng tiếng nhật", "10 phút"))
         
-        // Thêm câu hỏi mẫu cho Hiragana Quiz
-        dbHelper.insertSampleQuestions(this)
+
+        dbHelper.insertQuestions(this)
         
         quizModelList.clear()
         quizModelList.addAll(dbHelper.getAllQuizzes())
