@@ -11,7 +11,8 @@ import com.example.doanchuyende.Models.Question
 import com.example.doanchuyende.R
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.example.doanchuyende.Database.QuizDatabaseHelper
-
+import android.media.MediaPlayer
+import android.provider.MediaStore.Audio.Media
 
 class QuizQuestionActivity : AppCompatActivity() {
     private lateinit var questionIndicator: TextView
@@ -23,6 +24,7 @@ class QuizQuestionActivity : AppCompatActivity() {
     private lateinit var btnAns4: Button
     private lateinit var btnNext: Button
     private lateinit var progressIndicator: LinearProgressIndicator
+    private lateinit var mediaPlayer: MediaPlayer
 
     private var currentQuestionIndex = 0
     private var selectedAnswer = -1
@@ -40,14 +42,17 @@ class QuizQuestionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_question)
 
+        // Initialize MediaPlayer
+        mediaPlayer = MediaPlayer.create(this, R.raw.click)
+
         quizId = intent.getStringExtra("QUIZ_ID") ?: "1"
         quizTitle = intent.getStringExtra("QUIZ_TITLE") ?: "Quiz"
-
         supportActionBar?.title = quizTitle
 
         // Set time limit based on quiz type
         totalTime = when (quizId) {
             "3" -> 10 * 60 * 1000L
+            "4" -> 10 * 60 * 1000L
             else -> 5 * 60 * 1000L
         }
         timeLeft = totalTime
@@ -81,6 +86,7 @@ class QuizQuestionActivity : AppCompatActivity() {
         val answerButtons = listOf(btnAns1, btnAns2, btnAns3, btnAns4)
         answerButtons.forEachIndexed { index, button ->
             button.setOnClickListener {
+                mediaPlayer.start()
                 selectAnswer(index)
             }
         }
@@ -170,5 +176,6 @@ class QuizQuestionActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         timer?.cancel()
+        mediaPlayer.release()
     }
 } 
