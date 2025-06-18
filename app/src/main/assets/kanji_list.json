@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "kanji": "水",
+    "meaning": "nước",
+    "onyomi": "スイ (sui)",
+    "kunyomi": "みず (mizu)",
+    "examples": ["水を飲む", "水曜日", "飲み水"]
+  },
+  {
+    "id": "2",
+    "kanji": "火",
+    "meaning": "lửa",
+    "onyomi": "カ (ka)",
+    "kunyomi": "ひ (hi)",
+    "examples": ["火をつける", "火曜日", "火山"]
+  },
+  {
+    "id": "3",
+    "kanji": "木",
+    "meaning": "cây",
+    "onyomi": "モク (moku)",
+    "kunyomi": "き (ki)",
+    "examples": ["木を植える", "木曜日", "木材"]
+  },
+  {
+    "id": "4",
+    "kanji": "金",
+    "meaning": "vàng / tiền",
+    "onyomi": "キン (kin)",
+    "kunyomi": "かね (kane)",
+    "examples": ["お金", "金曜日", "現金"]
+  },
+  {
+    "id": "5",
+    "kanji": "人",
+    "meaning": "người",
+    "onyomi": "ジン・ニン (jin/nin)",
+    "kunyomi": "ひと (hito)",
+    "examples": ["日本人", "三人", "良い人"]
+  },
+  {
+    "id": "6",
+    "kanji": "山",
+    "meaning": "núi",
+    "onyomi": "サン (san)",
+    "kunyomi": "やま (yama)",
+    "examples": ["富士山", "山道", "山登り"]
+  },
+  {
+    "id": "7",
+    "kanji": "日",
+    "meaning": "ngày / mặt trời",
+    "onyomi": "ニチ・ジツ (nichi/jitsu)",
+    "kunyomi": "ひ・か (hi/ka)",
+    "examples": ["日曜日", "今日", "毎日"]
+  },
+  {
+    "id": "8",
+    "kanji": "月",
+    "meaning": "mặt trăng / tháng",
+    "onyomi": "ゲツ・ガツ (getsu/gatsu)",
+    "kunyomi": "つき (tsuki)",
+    "examples": ["月曜日", "一月", "今月"]
+  },
+  {
+    "id": "9",
+    "kanji": "口",
+    "meaning": "miệng",
+    "onyomi": "コウ・ク (kou/ku)",
+    "kunyomi": "くち (kuchi)",
+    "examples": ["口を開ける", "人口", "出口"]
+  },
+  {
+    "id": "10",
+    "kanji": "目",
+    "meaning": "mắt",
+    "onyomi": "モク (moku)",
+    "kunyomi": "め (me)",
+    "examples": ["目を閉じる", "目的", "一つ目"]
+  },
+  {
+    "id": "11",
+    "kanji": "空",
+    "meaning": "bầu trời",
+    "onyomi": "クウ (kuu)",
+    "kunyomi": "そら・から・あく",
+    "examples": ["空が青い", "空港", "空気"]
+  },
+  {
+    "id": "12",
+    "kanji": "電",
+    "meaning": "điện",
+    "onyomi": "デン (den)",
+    "kunyomi": "",
+    "examples": ["電気", "電話", "電車"]
+  },
+  {
+    "id": "13",
+    "kanji": "車",
+    "meaning": "xe",
+    "onyomi": "シャ (sha)",
+    "kunyomi": "くるま",
+    "examples": ["車を運転する", "電車", "自動車"]
+  },
+  {
+    "id": "14",
+    "kanji": "雨",
+    "meaning": "mưa",
+    "onyomi": "ウ (u)",
+    "kunyomi": "あめ・あま",
+    "examples": ["雨が降る", "大雨", "梅雨"]
+  },
+  {
+    "id": "15",
+    "kanji": "名",
+    "meaning": "tên",
+    "onyomi": "メイ・ミョウ (mei/myou)",
+    "kunyomi": "な",
+    "examples": ["名前", "有名", "名字"]
+  },
+  {
+    "id": "16",
+    "kanji": "学",
+    "meaning": "học",
+    "onyomi": "ガク (gaku)",
+    "kunyomi": "まなぶ",
+    "examples": ["大学", "学生", "学ぶ"]
+  },
+  {
+    "id": "17",
+    "kanji": "校",
+    "meaning": "trường học",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "",
+    "examples": ["学校", "高校", "校舎"]
+  },
+  {
+    "id": "18",
+    "kanji": "生",
+    "meaning": "sinh ra / sống",
+    "onyomi": "セイ・ショウ (sei/shou)",
+    "kunyomi": "いきる・うまれる・なま",
+    "examples": ["学生", "誕生", "生ビール"]
+  },
+  {
+    "id": "19",
+    "kanji": "先",
+    "meaning": "trước / phía trước",
+    "onyomi": "セン (sen)",
+    "kunyomi": "さき",
+    "examples": ["先生", "先月", "先に行く"]
+  },
+  {
+    "id": "20",
+    "kanji": "年",
+    "meaning": "năm",
+    "onyomi": "ネン (nen)",
+    "kunyomi": "とし",
+    "examples": ["一年", "年齢", "去年"]
+  }
+] 
