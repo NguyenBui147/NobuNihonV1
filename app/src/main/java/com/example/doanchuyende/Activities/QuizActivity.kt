@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.doanchuyende.Adapters.QuizListAdapter
 import com.example.doanchuyende.Models.QuizModel
 import com.example.doanchuyende.R
+import com.example.doanchuyende.Database.QuizDatabaseHelper
+
 
 class QuizActivity : AppCompatActivity() {
     private lateinit var quizModelList: MutableList<QuizModel>
@@ -28,6 +30,7 @@ class QuizActivity : AppCompatActivity() {
         quizModelList = mutableListOf()
         setupRecyclerView()
         getQuizData()
+
     }
 
     private fun setupRecyclerView() {
@@ -38,11 +41,20 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun getQuizData() {
-        quizModelList.add(QuizModel("1", "Hiragana Quiz", "Kiểm tra kiến thức về bảng chữ cái Hiragana", "5 phút"))
-        quizModelList.add(QuizModel("2", "Katakana Quiz", "Kiểm tra kiến thức về bảng chữ cái Katakana", "5 phút"))
-        quizModelList.add(QuizModel("3", "Từ vựng N5", "Kiểm tra từ vựng trình độ N5", "5 phút"))
-        quizModelList.add(QuizModel("4", "Ngữ pháp N5", "Kiểm tra ngữ pháp trình độ N5", "5 phút"))
-        quizModelList.add(QuizModel("5", "Kanji N5", "Kiểm tra Kanji N5", "5 phút"))
+        val dbHelper= QuizDatabaseHelper(this)
+        dbHelper.addQuiz(QuizModel("1", "Hiragana Quiz", "Kiểm tra kiến thức về Hiragana", "5 phút"))
+        dbHelper.addQuiz(QuizModel("2", "Katakana Quiz", "Kiểm tra kiến thức về Katakana", "5 phút"))
+        dbHelper.addQuiz(QuizModel("3", "Kanji Quiz", "Kiểm tra kiến thức về Kanji", "10 phút"))
+        dbHelper.addQuiz(QuizModel("4", "Từ vựng Quiz", "Kiểm tra kiến thức về từ vựng tiếng nhật", "10 phút"))
+        
+        // Thêm câu hỏi mẫu cho Hiragana Quiz
+        dbHelper.insertSampleQuestions(this)
+        
+        quizModelList.clear()
+        quizModelList.addAll(dbHelper.getAllQuizzes())
         adapter.notifyDataSetChanged()
     }
+
+
+
 }

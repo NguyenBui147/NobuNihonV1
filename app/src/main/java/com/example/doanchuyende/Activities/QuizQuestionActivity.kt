@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.doanchuyende.Models.Question
 import com.example.doanchuyende.R
 import com.google.android.material.progressindicator.LinearProgressIndicator
+import com.example.doanchuyende.Database.QuizDatabaseHelper
+import androidx.core.content.ContextCompat
 
 class QuizQuestionActivity : AppCompatActivity() {
     private lateinit var questionIndicator: TextView
@@ -31,12 +33,7 @@ class QuizQuestionActivity : AppCompatActivity() {
     private lateinit var quizId: String
     private lateinit var quizTitle: String
 
-    private val questions = listOf(
-        Question(1, "Hiragana của 'a' là gì?", listOf("あ", "い", "う", "え"), 0),
-        Question(2, "Katakana của 'ka' là gì?", listOf("カ", "キ", "ク", "ケ"), 0),
-        Question(3, "Từ vựng 'gakkou' nghĩa là gì?", listOf("Trường học", "Sách", "Bút", "Bàn"), 0),
-        Question(4, "Ngữ pháp nào dùng để phủ định?", listOf("です", "じゃない", "ます", "が"), 1)
-    )
+    private lateinit var questions: List<Question>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +41,18 @@ class QuizQuestionActivity : AppCompatActivity() {
 
         quizId = intent.getStringExtra("QUIZ_ID") ?: "1"
         quizTitle = intent.getStringExtra("QUIZ_TITLE") ?: "Quiz"
+        supportActionBar?.title = quizTitle
 
+        val dbHelper = QuizDatabaseHelper(this)
+        questions = dbHelper.getRandomQuestionSet(quizId)
+
+        if (questions.isEmpty()) {
+            Toast.makeText(this, "Không tìm thấy câu hỏi cho quiz này", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
+
+        // Khởi tạo UI
         questionIndicator = findViewById(R.id.question_indicator_textview)
         timerTextView = findViewById(R.id.timer_textview)
         questionTextView = findViewById(R.id.question_textView)
@@ -54,8 +62,6 @@ class QuizQuestionActivity : AppCompatActivity() {
         btnAns4 = findViewById(R.id.btn_ans_4)
         btnNext = findViewById(R.id.btn_next)
         progressIndicator = findViewById(R.id.question_progress)
-
-        supportActionBar?.title = quizTitle
 
         setListeners()
         startTimer()
