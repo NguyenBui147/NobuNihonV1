@@ -8,8 +8,10 @@
     android:background="@color/beige"
     tools:context=".Activities.KanjiActivity">
     
+
+
     <ImageView
-        android:layout_margin="40dp"
+        android:layout_margin="20dp"
         android:id="@+id/kanji_imgV"
         android:src="@drawable/kanji_activity_icon"
         android:layout_width="80dp"
@@ -17,8 +19,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/recyclerViewKanji"
+        app:layout_constraintBottom_toTopOf="@id/searchBarContainer"
         />
+
+    <LinearLayout
+        android:id="@+id/searchBarContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/kanji_imgV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_margin="20dp"
+            android:id="@+id/searchView"
+            android:backgroundTint="@color/snow"
+            android:background="@drawable/rounded_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Tìm kiếm Kanji, ý nghĩa, đọc..." />
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewKanji"
@@ -29,6 +51,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/kanji_imgV" />
+        app:layout_constraintTop_toBottomOf="@id/searchBarContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

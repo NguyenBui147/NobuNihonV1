@@ -50,9 +50,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activities.VocabularyActivity"
+            android:name=".Activities.FlashcardActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

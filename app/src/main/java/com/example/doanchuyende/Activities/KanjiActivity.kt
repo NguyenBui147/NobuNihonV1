@@ -10,18 +10,23 @@ import com.example.doanchuyende.Adapters.KanjiAdapter
 import com.example.doanchuyende.Models.KanjiModel
 import com.example.doanchuyende.R
 import com.example.doanchuyende.Database.KanjiDatabaseHelper
+import androidx.appcompat.widget.SearchView
 
 class KanjiActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: KanjiAdapter
     private lateinit var kanjiList: MutableList<KanjiModel>
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kanji)
 
         recyclerView = findViewById(R.id.recyclerViewKanji)
-        Log.d("KanjiActivity", "RecyclerView found: ${recyclerView != null}")
+        val searchView = findViewById<SearchView>(R.id.searchView)
+        Log.d("KanjiActivity", "RecyclerView found: "+(recyclerView != null))
         
         recyclerView.layoutManager = GridLayoutManager(this, 2)
         Log.d("KanjiActivity", "GridLayoutManager set")
@@ -47,7 +52,24 @@ class KanjiActivity : AppCompatActivity() {
             
             // Force refresh
             adapter.notifyDataSetChanged()
-            
+
+            // SearchView logic
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    // Optionally handle search button press
+                    return false
+                }
+
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    val results = if (!newText.isNullOrEmpty()) {
+                        dbHelper.searchKanji(newText)
+                    } else {
+                        dbHelper.getAllKanji()
+                    }
+                    adapter.updateList(results)
+                    return true
+                }
+            })
         } catch (e: Exception) {
             Log.e("KanjiActivity", "Error loading kanji data", e)
             Toast.makeText(this, "Lỗi: ${e.message}", Toast.LENGTH_LONG).show()

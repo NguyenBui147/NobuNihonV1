@@ -151,7 +151,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btnVolcabulary"
+                        android:id="@+id/btnFlashcard"
                         android:background="@drawable/custom_button"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
@@ -164,13 +164,13 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/ic_vol"
+                            android:src="@drawable/flashcard_activity_logo"
                             app:tint="@android:color/white" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Từ vựng"
+                            android:text="Flashcards"
                             android:textStyle="bold"
                             android:textColor="@android:color/white"
                             android:textSize="14sp"

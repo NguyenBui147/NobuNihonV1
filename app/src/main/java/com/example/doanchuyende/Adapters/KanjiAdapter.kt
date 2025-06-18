@@ -10,7 +10,7 @@ import com.example.doanchuyende.Activities.KanjiDetailActivity
 import com.example.doanchuyende.Models.KanjiModel
 import com.example.doanchuyende.R
 
-class KanjiAdapter(private val kanjiList: List<KanjiModel>) :
+class KanjiAdapter(private val kanjiList: MutableList<KanjiModel>) :
     RecyclerView.Adapter<KanjiAdapter.KanjiViewHolder>() {
 
     inner class KanjiViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -39,6 +39,8 @@ class KanjiAdapter(private val kanjiList: List<KanjiModel>) :
             meaningTextView.text = kanji.meaning
             readingTextView.text = "${kanji.onyomi} / ${kanji.kunyomi}"
         }
+
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KanjiViewHolder {
@@ -52,4 +54,9 @@ class KanjiAdapter(private val kanjiList: List<KanjiModel>) :
     }
 
     override fun getItemCount() = kanjiList.size
+    fun updateList(newList: List<KanjiModel>) {
+        kanjiList.clear()
+        kanjiList.addAll(newList)
+
+    }
 }

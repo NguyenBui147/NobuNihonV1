@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnKanji.setOnClickListener {
             startActivity(Intent(this, KanjiActivity::class.java))
         }
-        binding.btnVolcabulary.setOnClickListener {
-            startActivity(Intent(this, VocabularyActivity::class.java))
+        binding.btnFlashcard.setOnClickListener {
+            startActivity(Intent(this, FlashcardActivity::class.java))
         }
         binding.btnQuiz.setOnClickListener {
             startActivity(Intent(this, QuizActivity::class.java))
