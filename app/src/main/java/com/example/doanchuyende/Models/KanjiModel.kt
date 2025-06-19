@@ -6,5 +6,6 @@ data class KanjiModel(
     val meaning: String,
     val onyomi: String,
     val kunyomi: String,
+    val radical: String,
     val examples: List<String>
 ) 

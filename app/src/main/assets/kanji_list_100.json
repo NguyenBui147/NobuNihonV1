@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "1",
+    "kanji": "水",
+    "meaning": "nước",
+    "onyomi": "スイ (sui)",
+    "kunyomi": "みず (mizu)",
+    "radical": "水 (nước)",
+    "examples": [
+      "水を飲む (Uống nước)",
+      "水曜日 (Thứ tư)",
+      "飲み水 (Nước uống)"
+    ]
+  },
+  {
+    "id": "2",
+    "kanji": "火",
+    "meaning": "lửa",
+    "onyomi": "カ (ka)",
+    "kunyomi": "ひ (hi)",
+    "radical": "火 (lửa)",
+    "examples": [
+      "火をつける (Châm lửa)",
+      "火曜日 (Thứ ba)",
+      "火山 (Núi lửa)"
+    ]
+  },
+  {
+    "id": "3",
+    "kanji": "木",
+    "meaning": "cây",
+    "onyomi": "モク (moku)",
+    "kunyomi": "き (ki)",
+    "radical": "木 (cây)",
+    "examples": [
+      "木を植える (Trồng cây)",
+      "木曜日 (Thứ năm)",
+      "木材 (Gỗ)"
+    ]
+  },
+  {
+    "id": "4",
+    "kanji": "金",
+    "meaning": "vàng / tiền",
+    "onyomi": "キン (kin)",
+    "kunyomi": "かね (kane)",
+    "radical": "金 (vàng)",
+    "examples": [
+      "お金 (Tiền)",
+      "金曜日 (Thứ sáu)",
+      "現金 (Tiền mặt)"
+    ]
+  },
+  {
+    "id": "5",
+    "kanji": "人",
+    "meaning": "người",
+    "onyomi": "ジン・ニン (jin/nin)",
+    "kunyomi": "ひと (hito)",
+    "radical": "人 (người)",
+    "examples": [
+      "日本人 (Người Nhật)",
+      "三人 (Ba người)",
+      "良い人 (Người tốt)"
+    ]
+  },
+  {
+    "id": "6",
+    "kanji": "山",
+    "meaning": "núi",
+    "onyomi": "サン (san)",
+    "kunyomi": "やま (yama)",
+    "radical": "山 (núi)",
+    "examples": [
+      "富士山 (Núi Phú Sĩ)",
+      "山道 (Đường núi)",
+      "山登り (Leo núi)"
+    ]
+  },
+  {
+    "id": "7",
+    "kanji": "日",
+    "meaning": "ngày / mặt trời",
+    "onyomi": "ニチ・ジツ (nichi/jitsu)",
+    "kunyomi": "ひ・か (hi/ka)",
+    "radical": "日 (mặt trời)",
+    "examples": [
+      "日曜日 (Chủ nhật)",
+      "今日 (Hôm nay)",
+      "毎日 (Mỗi ngày)"
+    ]
+  },
+  {
+    "id": "8",
+    "kanji": "月",
+    "meaning": "mặt trăng / tháng",
+    "onyomi": "ゲツ・ガツ (getsu/gatsu)",
+    "kunyomi": "つき (tsuki)",
+    "radical": "月 (trăng)",
+    "examples": [
+      "月曜日 (Thứ hai)",
+      "一月 (Tháng một)",
+      "今月 (Tháng này)"
+    ]
+  },
+  {
+    "id": "9",
+    "kanji": "口",
+    "meaning": "miệng",
+    "onyomi": "コウ・ク (kou/ku)",
+    "kunyomi": "くち (kuchi)",
+    "radical": "口 (miệng)",
+    "examples": [
+      "口を開ける (Mở miệng)",
+      "人口 (Dân số)",
+      "出口 (Lối ra)"
+    ]
+  },
+  {
+    "id": "10",
+    "kanji": "目",
+    "meaning": "mắt",
+    "onyomi": "モク (moku)",
+    "kunyomi": "め (me)",
+    "radical": "目 (mắt)",
+    "examples": [
+      "目を閉じる (Nhắm mắt)",
+      "目的 (Mục đích)",
+      "一つ目 (Cái thứ nhất)"
+    ]
+  },
+  {
+    "id": "11",
+    "kanji": "空",
+    "meaning": "bầu trời",
+    "onyomi": "クウ (kuu)",
+    "kunyomi": "そら・から・あく",
+    "radical": "穴 (huyệt)",
+    "examples": [
+      "空が青い (Trời xanh)",
+      "空港 (Sân bay)",
+      "空気 (Không khí)"
+    ]
+  },
+  {
+    "id": "12",
+    "kanji": "電",
+    "meaning": "điện",
+    "onyomi": "デン (den)",
+    "kunyomi": "",
+    "radical": "雨 (mưa)",
+    "examples": [
+      "電気 (Điện)",
+      "電話 (Điện thoại)",
+      "電車 (Tàu điện)"
+    ]
+  },
+  {
+    "id": "13",
+    "kanji": "車",
+    "meaning": "xe",
+    "onyomi": "シャ (sha)",
+    "kunyomi": "くるま",
+    "radical": "車 (xe)",
+    "examples": [
+      "車を運転する (Lái xe)",
+      "電車 (Tàu điện)",
+      "自動車 (Ô tô)"
+    ]
+  },
+  {
+    "id": "14",
+    "kanji": "雨",
+    "meaning": "mưa",
+    "onyomi": "ウ (u)",
+    "kunyomi": "あめ・あま",
+    "radical": "雨 (mưa)",
+    "examples": [
+      "雨が降る (Trời mưa)",
+      "大雨 (Mưa to)",
+      "梅雨 (Mùa mưa)"
+    ]
+  },
+  {
+    "id": "15",
+    "kanji": "名",
+    "meaning": "tên",
+    "onyomi": "メイ・ミョウ (mei/myou)",
+    "kunyomi": "な",
+    "radical": "口 (miệng)",
+    "examples": [
+      "名前 (Tên)",
+      "有名 (Nổi tiếng)",
+      "名字 (Họ tên)"
+    ]
+  },
+  {
+    "id": "16",
+    "kanji": "学",
+    "meaning": "học",
+    "onyomi": "ガク (gaku)",
+    "kunyomi": "まなぶ",
+    "radical": "子 (trẻ con)",
+    "examples": [
+      "大学 (Đại học)",
+      "学生 (Học sinh)",
+      "学ぶ (Học tập)"
+    ]
+  },
+  {
+    "id": "17",
+    "kanji": "校",
+    "meaning": "trường học",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "",
+    "radical": "木 (cây)",
+    "examples": [
+      "学校 (Trường học)",
+      "高校 (Trường cấp ba)",
+      "校舎 (Tòa nhà trường)"
+    ]
+  },
+  {
+    "id": "18",
+    "kanji": "生",
+    "meaning": "sinh ra / sống",
+    "onyomi": "セイ・ショウ (sei/shou)",
+    "kunyomi": "いきる・うまれる・なま",
+    "radical": "生 (sinh)",
+    "examples": [
+      "学生 (Học sinh)",
+      "誕生 (Sự ra đời)",
+      "生ビール (Bia tươi)"
+    ]
+  },
+  {
+    "id": "19",
+    "kanji": "先",
+    "meaning": "trước / phía trước",
+    "onyomi": "セン (sen)",
+    "kunyomi": "さき",
+    "radical": "儿 (con trai)",
+    "examples": [
+      "先生 (Giáo viên)",
+      "先月 (Tháng trước)",
+      "先に行く (Đi trước)"
+    ]
+  },
+  {
+    "id": "20",
+    "kanji": "年",
+    "meaning": "năm",
+    "onyomi": "ネン (nen)",
+    "kunyomi": "とし",
+    "radical": "干 (cán)",
+    "examples": [
+      "一年 (Một năm)",
+      "年齢 (Tuổi tác)",
+      "去年 (Năm ngoái)"
+    ]
+  },
+  {
+    "id": "21",
+    "kanji": "大",
+    "meaning": "lớn",
+    "onyomi": "ダイ・タイ (dai/tai)",
+    "kunyomi": "おお (oo)",
+    "radical": "大 (lớn)",
+    "examples": [
+      "大きい家 (Ngôi nhà lớn)",
+      "大学に行く (Đi đến đại học)",
+      "大人になる (Trở thành người lớn)"
+    ]
+  },
+  {
+    "id": "22",
+    "kanji": "小",
+    "meaning": "nhỏ",
+    "onyomi": "ショウ (shou)",
+    "kunyomi": "ちい (chii)・こ・お",
+    "radical": "小 (nhỏ)",
+    "examples": [
+      "小さい犬 (Con chó nhỏ)",
+      "小学校 (Trường tiểu học)",
+      "小石を拾う (Nhặt viên đá nhỏ)"
+    ]
+  },
+  {
+    "id": "23",
+    "kanji": "中",
+    "meaning": "trong / giữa",
+    "onyomi": "チュウ (chuu)",
+    "kunyomi": "なか (naka)",
+    "radical": "丨 (cổn)",
+    "examples": [
+      "家の中 (Trong nhà)",
+      "中国へ行く (Đi đến Trung Quốc)",
+      "真ん中に置く (Đặt vào giữa)"
+    ]
+  },
+  {
+    "id": "24",
+    "kanji": "本",
+    "meaning": "sách / gốc",
+    "onyomi": "ホン (hon)",
+    "kunyomi": "もと (moto)",
+    "radical": "木 (cây)",
+    "examples": [
+      "本を読む (Đọc sách)",
+      "日本人 (Người Nhật)",
+      "本当です (Thật đấy)"
+    ]
+  },
+  {
+    "id": "25",
+    "kanji": "語",
+    "meaning": "ngôn ngữ / từ",
+    "onyomi": "ゴ (go)",
+    "kunyomi": "かたる・かたらう",
+    "radical": "言 (nói)",
+    "examples": [
+      "日本語を学ぶ (Học tiếng Nhật)",
+      "英語で話す (Nói bằng tiếng Anh)",
+      "外国語 (Ngoại ngữ)"
+    ]
+  },
+  {
+    "id": "26",
+    "kanji": "飲",
+    "meaning": "uống",
+    "onyomi": "イン (in)",
+    "kunyomi": "のむ",
+    "radical": "⻌ (sước)",
+    "examples": [
+      "水を飲む (Uống nước)",
+      "飲み物を買う (Mua đồ uống)",
+      "飲酒は禁止 (Cấm uống rượu)"
+    ]
+  },
+  {
+    "id": "27",
+    "kanji": "食",
+    "meaning": "ăn",
+    "onyomi": "ショク (shoku)",
+    "kunyomi": "たべる",
+    "radical": "食 (ăn)",
+    "examples": [
+      "ご飯を食べる (Ăn cơm)",
+      "昼食の時間 (Giờ ăn trưa)",
+      "外食する (Ăn ngoài)"
+    ]
+  },
+  {
+    "id": "28",
+    "kanji": "行",
+    "meaning": "đi",
+    "onyomi": "コウ・ギョウ (kou/gyou)",
+    "kunyomi": "いく・ゆく",
+    "radical": "行 (đi)",
+    "examples": [
+      "学校へ行く (Đi đến trường)",
+      "一行目を読む (Đọc dòng đầu tiên)",
+      "旅行する (Đi du lịch)"
+    ]
+  },
+  {
+    "id": "29",
+    "kanji": "読",
+    "meaning": "đọc",
+    "onyomi": "ドク (doku)",
+    "kunyomi": "よむ",
+    "radical": "言 (nói)",
+    "examples": [
+      "本を読む (Đọc sách)",
+      "新聞を読む (Đọc báo)",
+      "読書の時間 (Giờ đọc sách)"
+    ]
+  },
+  {
+    "id": "30",
+    "kanji": "見",
+    "meaning": "nhìn",
+    "onyomi": "ケン (ken)",
+    "kunyomi": "みる・みえる",
+    "radical": "見 (nhìn)",
+    "examples": [
+      "映画を見る (Xem phim)",
+      "見学する (Tham quan)",
+      "見せてください (Làm ơn cho xem)"
+    ]
+  },
+  {
+    "id": "31",
+    "kanji": "土",
+    "meaning": "đất",
+    "onyomi": "ド・ト (do/to)",
+    "kunyomi": "つち (tsuchi)",
+    "radical": "土 (đất)",
+    "examples": [
+      "土地 (Đất đai)",
+      "土曜日 (Thứ bảy)",
+      "土を掘る (Đào đất)"
+    ]
+  },
+  {
+    "id": "32",
+    "kanji": "川",
+    "meaning": "sông",
+    "onyomi": "セン (sen)",
+    "kunyomi": "かわ (kawa)",
+    "radical": "川 (sông)",
+    "examples": [
+      "川で泳ぐ (Bơi ở sông)",
+      "川沿い (Ven sông)",
+      "川魚 (Cá sông)"
+    ]
+  },
+  {
+    "id": "33",
+    "kanji": "手",
+    "meaning": "tay",
+    "onyomi": "シュ (shu)",
+    "kunyomi": "て (te)",
+    "radical": "手 (tay)",
+    "examples": [
+      "手を洗う (Rửa tay)",
+      "手紙 (Thư tay)",
+      "手作り (Tự làm)"
+    ]
+  },
+  {
+    "id": "34",
+    "kanji": "足",
+    "meaning": "chân",
+    "onyomi": "ソク (soku)",
+    "kunyomi": "あし (ashi)",
+    "radical": "足 (chân)",
+    "examples": [
+      "足が速い (Chân nhanh)",
+      "足跡 (Dấu chân)",
+      "足を怪我する (Bị thương ở chân)"
+    ]
+  },
+  {
+    "id": "35",
+    "kanji": "耳",
+    "meaning": "tai",
+    "onyomi": "ジ (ji)",
+    "kunyomi": "みみ (mimi)",
+    "radical": "耳 (tai)",
+    "examples": [
+      "耳を貸す (Lắng nghe)",
+      "耳が痛い (Đau tai)",
+      "耳元で話す (Nói thầm bên tai)"
+    ]
+  },
+  {
+    "id": "36",
+    "kanji": "鼻",
+    "meaning": "mũi",
+    "onyomi": "ビ (bi)",
+    "kunyomi": "はな (hana)",
+    "radical": "鼻 (mũi)",
+    "examples": [
+      "鼻が高い (Mũi cao)",
+      "鼻血 (Chảy máu mũi)",
+      "鼻をほじる (Ngoáy mũi)"
+    ]
+  },
+  {
+    "id": "37",
+    "kanji": "心",
+    "meaning": "tâm",
+    "onyomi": "シン (shin)",
+    "kunyomi": "こころ (kokoro)",
+    "radical": "心 (tâm)",
+    "examples": [
+      "心から (Từ trái tim)",
+      "心配する (Lo lắng)",
+      "心臓 (Tim)"
+    ]
+  },
+  {
+    "id": "38",
+    "kanji": "力",
+    "meaning": "sức mạnh",
+    "onyomi": "リョク・リキ (ryoku/riki)",
+    "kunyomi": "ちから (chikara)",
+    "radical": "力 (sức mạnh)",
+    "examples": [
+      "力を入れる (Nỗ lực)",
+      "体力 (Sức khỏe)",
+      "電力 (Điện năng)"
+    ]
+  },
+  {
+    "id": "39",
+    "kanji": "気",
+    "meaning": "khí",
+    "onyomi": "キ (ki)",
+    "kunyomi": "け (ke)",
+    "radical": "气 (khí)",
+    "examples": [
+      "元気 (Khỏe mạnh)",
+      "気持ち (Cảm giác)",
+      "空気 (Không khí)"
+    ]
+  },
+  {
+    "id": "40",
+    "kanji": "石",
+    "meaning": "đá",
+    "onyomi": "セキ (seki)",
+    "kunyomi": "いし (ishi)",
+    "radical": "石 (đá)",
+    "examples": [
+      "石を投げる (Ném đá)",
+      "宝石 (Đá quý)",
+      "石畳 (Đường lát đá)"
+    ]
+  },
+  {
+    "id": "41",
+    "kanji": "花",
+    "meaning": "hoa",
+    "onyomi": "カ (ka)",
+    "kunyomi": "はな (hana)",
+    "radical": "艸 (cỏ)",
+    "examples": [
+      "花を飾る (Trang trí hoa)",
+      "花見 (Ngắm hoa)",
+      "花瓶 (Lọ hoa)"
+    ]
+  },
+  {
+    "id": "42",
+    "kanji": "草",
+    "meaning": "cỏ",
+    "onyomi": "ソウ (sou)",
+    "kunyomi": "くさ (kusa)",
+    "radical": "艸 (cỏ)",
+    "examples": [
+      "草を刈る (Cắt cỏ)",
+      "草原 (Đồng cỏ)",
+      "雑草 (Cỏ dại)"
+    ]
+  },
+  {
+    "id": "43",
+    "kanji": "虫",
+    "meaning": "côn trùng",
+    "onyomi": "チュウ (chuu)",
+    "kunyomi": "むし (mushi)",
+    "radical": "虫 (côn trùng)",
+    "examples": [
+      "虫を捕まえる (Bắt côn trùng)",
+      "虫歯 (Sâu răng)",
+      "害虫 (Côn trùng có hại)"
+    ]
+  },
+  {
+    "id": "44",
+    "kanji": "魚",
+    "meaning": "cá",
+    "onyomi": "ギョ (gyo)",
+    "kunyomi": "さかな (sakana)",
+    "radical": "魚 (cá)",
+    "examples": [
+      "魚を食べる (Ăn cá)",
+      "金魚 (Cá vàng)",
+      "魚市場 (Chợ cá)"
+    ]
+  },
+  {
+    "id": "45",
+    "kanji": "鳥",
+    "meaning": "chim",
+    "onyomi": "チョウ (chou)",
+    "kunyomi": "とり (tori)",
+    "radical": "鳥 (chim)",
+    "examples": [
+      "鳥が飛ぶ (Chim bay)",
+      "小鳥 (Chim nhỏ)",
+      "鳥かご (Lồng chim)"
+    ]
+  },
+  {
+    "id": "46",
+    "kanji": "犬",
+    "meaning": "chó",
+    "onyomi": "ケン (ken)",
+    "kunyomi": "いぬ (inu)",
+    "radical": "犬 (chó)",
+    "examples": [
+      "犬を散歩する (Dắt chó đi dạo)",
+      "子犬 (Chó con)",
+      "番犬 (Chó giữ nhà)"
+    ]
+  },
+  {
+    "id": "47",
+    "kanji": "猫",
+    "meaning": "mèo",
+    "onyomi": "ビョウ (byou)",
+    "kunyomi": "ねこ (neko)",
+    "radical": "犬 (chó)",
+    "examples": [
+      "猫を飼う (Nuôi mèo)",
+      "子猫 (Mèo con)",
+      "猫舌 (Sợ nóng)"
+    ]
+  },
+  {
+    "id": "48",
+    "kanji": "馬",
+    "meaning": "ngựa",
+    "onyomi": "バ (ba)",
+    "kunyomi": "うま (uma)",
+    "radical": "馬 (ngựa)",
+    "examples": [
+      "馬に乗る (Cưỡi ngựa)",
+      "競馬 (Đua ngựa)",
+      "馬車 (Xe ngựa)"
+    ]
+  },
+  {
+    "id": "49",
+    "kanji": "牛",
+    "meaning": "bò",
+    "onyomi": "ギュウ (gyuu)",
+    "kunyomi": "うし (ushi)",
+    "radical": "牛 (bò)",
+    "examples": [
+      "牛肉 (Thịt bò)",
+      "乳牛 (Bò sữa)",
+      "牛を育てる (Nuôi bò)"
+    ]
+  },
+  {
+    "id": "50",
+    "kanji": "門",
+    "meaning": "cổng",
+    "onyomi": "モン (mon)",
+    "kunyomi": "かど (kado)",
+    "radical": "門 (cổng)",
+    "examples": [
+      "門を開ける (Mở cổng)",
+      "校門 (Cổng trường)",
+      "専門 (Chuyên môn)"
+    ]
+  },
+  {
+    "id": "51",
+    "kanji": "米",
+    "meaning": "gạo",
+    "onyomi": "ベイ・マイ (bei/mai)",
+    "kunyomi": "こめ (kome)",
+    "radical": "米 (gạo)",
+    "examples": [
+      "米を炊く (Nấu cơm)",
+      "アメリカ (Mỹ)",
+      "米袋 (Bao gạo)"
+    ]
+  },
+  {
+    "id": "52",
+    "kanji": "酒",
+    "meaning": "rượu",
+    "onyomi": "シュ (shu)",
+    "kunyomi": "さけ (sake)",
+    "radical": "酉 (rượu)",
+    "examples": [
+      "酒を飲む (Uống rượu)",
+      "日本酒 (Rượu Nhật)",
+      "酒屋 (Cửa hàng rượu)"
+    ]
+  },
+  {
+    "id": "53",
+    "kanji": "茶",
+    "meaning": "trà",
+    "onyomi": "チャ (cha)",
+    "kunyomi": "ちゃ (cha)",
+    "radical": "艸 (cỏ)",
+    "examples": [
+      "お茶を飲む (Uống trà)",
+      "茶道 (Trà đạo)",
+      "緑茶 (Trà xanh)"
+    ]
+  },
+  {
+    "id": "54",
+    "kanji": "店",
+    "meaning": "cửa hàng",
+    "onyomi": "テン (ten)",
+    "kunyomi": "みせ (mise)",
+    "radical": "广 (nhà)",
+    "examples": [
+      "店に入る (Vào cửa hàng)",
+      "本屋 (Hiệu sách)",
+      "店員 (Nhân viên cửa hàng)"
+    ]
+  },
+  {
+    "id": "55",
+    "kanji": "町",
+    "meaning": "thị trấn",
+    "onyomi": "チョウ (chou)",
+    "kunyomi": "まち (machi)",
+    "radical": "田 (ruộng)",
+    "examples": [
+      "町を歩く (Đi bộ trong thị trấn)",
+      "町内 (Trong thị trấn)",
+      "町長 (Thị trưởng)"
+    ]
+  },
+  {
+    "id": "56",
+    "kanji": "村",
+    "meaning": "làng",
+    "onyomi": "ソン (son)",
+    "kunyomi": "むら (mura)",
+    "radical": "木 (cây)",
+    "examples": [
+      "村に住む (Sống ở làng)",
+      "村人 (Dân làng)",
+      "農村 (Làng quê)"
+    ]
+  },
+  {
+    "id": "57",
+    "kanji": "市",
+    "meaning": "thành phố",
+    "onyomi": "シ (shi)",
+    "kunyomi": "いち (ichi)",
+    "radical": "巾 (khăn)",
+    "examples": [
+      "市に行く (Đi đến thành phố)",
+      "市役所 (Tòa thị chính)",
+      "都市 (Đô thị)"
+    ]
+  },
+  {
+    "id": "58",
+    "kanji": "国",
+    "meaning": "quốc gia",
+    "onyomi": "コク (koku)",
+    "kunyomi": "くに (kuni)",
+    "radical": "囗 (vây quanh)",
+    "examples": [
+      "日本国 (Nước Nhật)",
+      "外国 (Nước ngoài)",
+      "国民 (Quốc dân)"
+    ]
+  },
+  {
+    "id": "59",
+    "kanji": "道",
+    "meaning": "đường",
+    "onyomi": "ドウ (dou)",
+    "kunyomi": "みち (michi)",
+    "radical": "辵 (sước)",
+    "examples": [
+      "道を歩く (Đi trên đường)",
+      "鉄道 (Đường sắt)",
+      "道場 (Võ đường)"
+    ]
+  },
+  {
+    "id": "60",
+    "kanji": "時",
+    "meaning": "thời gian",
+    "onyomi": "ジ (ji)",
+    "kunyomi": "とき (toki)",
+    "radical": "日 (mặt trời)",
+    "examples": [
+      "時間 (Thời gian)",
+      "時計 (Đồng hồ)",
+      "今時 (Ngày nay)"
+    ]
+  },
+  {
+    "id": "61",
+    "kanji": "分",
+    "meaning": "phút / phân chia",
+    "onyomi": "フン・ブン (fun/bun)",
+    "kunyomi": "わける (wakeru)",
+    "radical": "刀 (đao)",
+    "examples": [
+      "一分 (Một phút)",
+      "分ける (Chia sẻ)",
+      "自分 (Bản thân)"
+    ]
+  },
+  {
+    "id": "62",
+    "kanji": "秒",
+    "meaning": "giây",
+    "onyomi": "ビョウ (byou)",
+    "kunyomi": "",
+    "radical": "禾 (lúa)",
+    "examples": [
+      "一秒 (Một giây)",
+      "秒針 (Kim giây)",
+      "秒速 (Tốc độ giây)"
+    ]
+  },
+  {
+    "id": "63",
+    "kanji": "円",
+    "meaning": "đồng tiền / yên",
+    "onyomi": "エン (en)",
+    "kunyomi": "まる (maru)",
+    "radical": "囗 (vây quanh)",
+    "examples": [
+      "百円 (Một trăm yên)",
+      "円形 (Hình tròn)",
+      "円安 (Yên yếu)"
+    ]
+  },
+  {
+    "id": "64",
+    "kanji": "百",
+    "meaning": "trăm",
+    "onyomi": "ヒャク (hyaku)",
+    "kunyomi": "",
+    "radical": "白 (trắng)",
+    "examples": [
+      "百円 (Một trăm yên)",
+      "百年 (Một trăm năm)",
+      "百人 (Một trăm người)"
+    ]
+  },
+  {
+    "id": "65",
+    "kanji": "千",
+    "meaning": "nghìn",
+    "onyomi": "セン (sen)",
+    "kunyomi": "ち (chi)",
+    "radical": "十 (mười)",
+    "examples": [
+      "千円 (Một nghìn yên)",
+      "千年 (Một nghìn năm)",
+      "千人 (Một nghìn người)"
+    ]
+  },
+  {
+    "id": "66",
+    "kanji": "万",
+    "meaning": "vạn",
+    "onyomi": "マン・バン (man/ban)",
+    "kunyomi": "",
+    "radical": "一 (một)",
+    "examples": [
+      "一万円 (Mười nghìn yên)",
+      "万年筆 (Bút máy)",
+      "万人 (Mọi người)"
+    ]
+  },
+  {
+    "id": "67",
+    "kanji": "半",
+    "meaning": "nửa",
+    "onyomi": "ハン (han)",
+    "kunyomi": "なかば (nakaba)",
+    "radical": "十 (mười)",
+    "examples": [
+      "半分 (Một nửa)",
+      "半日 (Nửa ngày)",
+      "半年 (Nửa năm)"
+    ]
+  },
+  {
+    "id": "68",
+    "kanji": "田",
+    "meaning": "ruộng",
+    "onyomi": "デン (den)",
+    "kunyomi": "た (ta)",
+    "radical": "田 (ruộng)",
+    "examples": [
+      "田んぼ (Ruộng lúa)",
+      "田舎 (Nông thôn)",
+      "水田 (Ruộng nước)"
+    ]
+  },
+  {
+    "id": "69",
+    "kanji": "入",
+    "meaning": "vào",
+    "onyomi": "ニュウ (nyuu)",
+    "kunyomi": "いる・はいる (iru/hairu)",
+    "radical": "入 (vào)",
+    "examples": [
+      "部屋に入る (Vào phòng)",
+      "入学 (Nhập học)",
+      "入力 (Nhập liệu)"
+    ]
+  },
+  {
+    "id": "70",
+    "kanji": "出",
+    "meaning": "ra",
+    "onyomi": "シュツ (shutsu)",
+    "kunyomi": "でる (deru)",
+    "radical": "山 (núi)",
+    "examples": [
+      "外に出る (Ra ngoài)",
+      "出口 (Lối ra)",
+      "出発 (Khởi hành)"
+    ]
+  },
+  {
+    "id": "71",
+    "kanji": "立",
+    "meaning": "đứng",
+    "onyomi": "リツ (ritsu)",
+    "kunyomi": "たつ (tatsu)",
+    "radical": "立 (đứng)",
+    "examples": [
+      "立つ (Đứng lên)",
+      "国立 (Quốc lập)",
+      "立場 (Lập trường)"
+    ]
+  },
+  {
+    "id": "72",
+    "kanji": "休",
+    "meaning": "nghỉ",
+    "onyomi": "キュウ (kyuu)",
+    "kunyomi": "やすむ (yasumu)",
+    "radical": "人 (người)",
+    "examples": [
+      "休む (Nghỉ ngơi)",
+      "休日 (Ngày nghỉ)",
+      "休息 (Sự nghỉ ngơi)"
+    ]
+  },
+  {
+    "id": "73",
+    "kanji": "書",
+    "meaning": "viết / sách",
+    "onyomi": "ショ (sho)",
+    "kunyomi": "かく (kaku)",
+    "radical": "曰 (ngày)",
+    "examples": [
+      "本を書く (Viết sách)",
+      "図書館 (Thư viện)",
+      "書道 (Thư pháp)"
+    ]
+  },
+  {
+    "id": "74",
+    "kanji": "話",
+    "meaning": "nói chuyện",
+    "onyomi": "ワ (wa)",
+    "kunyomi": "はなす (hanasu)",
+    "radical": "言 (nói)",
+    "examples": [
+      "話す (Nói chuyện)",
+      "電話 (Điện thoại)",
+      "会話 (Hội thoại)"
+    ]
+  },
+  {
+    "id": "75",
+    "kanji": "聞",
+    "meaning": "nghe",
+    "onyomi": "ブン・モン (bun/mon)",
+    "kunyomi": "きく (kiku)",
+    "radical": "耳 (tai)",
+    "examples": [
+      "聞く (Nghe)",
+      "新聞 (Báo chí)",
+      "聞き手 (Người nghe)"
+    ]
+  },
+  {
+    "id": "76",
+    "kanji": "買",
+    "meaning": "mua",
+    "onyomi": "バイ (bai)",
+    "kunyomi": "かう (kau)",
+    "radical": "貝 (vỏ sò)",
+    "examples": [
+      "買う (Mua)",
+      "買い物 (Mua sắm)",
+      "購入 (Mua hàng)"
+    ]
+  },
+  {
+    "id": "77",
+    "kanji": "売",
+    "meaning": "bán",
+    "onyomi": "バイ (bai)",
+    "kunyomi": "うる (uru)",
+    "radical": "士 (sĩ)",
+    "examples": [
+      "売る (Bán)",
+      "販売 (Bán hàng)",
+      "売店 (Quầy hàng)"
+    ]
+  },
+  {
+    "id": "78",
+    "kanji": "待",
+    "meaning": "chờ",
+    "onyomi": "タイ (tai)",
+    "kunyomi": "まつ (matsu)",
+    "radical": "彳 (sước)",
+    "examples": [
+      "待つ (Chờ đợi)",
+      "待合室 (Phòng chờ)",
+      "期待 (Kỳ vọng)"
+    ]
+  },
+  {
+    "id": "79",
+    "kanji": "来",
+    "meaning": "đến",
+    "onyomi": "ライ (rai)",
+    "kunyomi": "くる (kuru)",
+    "radical": "人 (người)",
+    "examples": [
+      "来る (Đến)",
+      "来週 (Tuần tới)",
+      "来年 (Năm tới)"
+    ]
+  },
+  {
+    "id": "80",
+    "kanji": "帰",
+    "meaning": "về",
+    "onyomi": "キ (ki)",
+    "kunyomi": "かえる (kaeru)",
+    "radical": "彐 (tay)",
+    "examples": [
+      "帰る (Về nhà)",
+      "帰国 (Về nước)",
+      "帰宅 (Về đến nhà)"
+    ]
+  },
+  {
+    "id": "81",
+    "kanji": "起",
+    "meaning": "dậy",
+    "onyomi": "キ (ki)",
+    "kunyomi": "おきる (okiru)",
+    "radical": "走 (chạy)",
+    "examples": [
+      "起きる (Dậy)",
+      "起床 (Thức dậy)",
+      "起源 (Nguồn gốc)"
+    ]
+  },
+  {
+    "id": "82",
+    "kanji": "寝",
+    "meaning": "ngủ",
+    "onyomi": "シン (shin)",
+    "kunyomi": "ねる (neru)",
+    "radical": "宀 (nhà)",
+    "examples": [
+      "寝る (Ngủ)",
+      "寝室 (Phòng ngủ)",
+      "寝坊 (Ngủ nướng)"
+    ]
+  },
+  {
+    "id": "83",
+    "kanji": "走",
+    "meaning": "chạy",
+    "onyomi": "ソウ (sou)",
+    "kunyomi": "はしる (hashiru)",
+    "radical": "走 (chạy)",
+    "examples": [
+      "走る (Chạy)",
+      "競走 (Cuộc đua)",
+      "走者 (Người chạy)"
+    ]
+  },
+  {
+    "id": "84",
+    "kanji": "止",
+    "meaning": "dừng",
+    "onyomi": "シ (shi)",
+    "kunyomi": "とまる (tomaru)",
+    "radical": "止 (dừng)",
+    "examples": [
+      "止まる (Dừng lại)",
+      "禁止 (Cấm)",
+      "停止 (Tạm dừng)"
+    ]
+  },
+  {
+    "id": "85",
+    "kanji": "開",
+    "meaning": "mở",
+    "onyomi": "カイ (kai)",
+    "kunyomi": "あける (akeru)",
+    "radical": "門 (cổng)",
+    "examples": [
+      "開ける (Mở ra)",
+      "開会 (Khai mạc)",
+      "公開 (Công khai)"
+    ]
+  },
+  {
+    "id": "86",
+    "kanji": "閉",
+    "meaning": "đóng",
+    "onyomi": "ヘイ (hei)",
+    "kunyomi": "しめる (shimeru)",
+    "radical": "門 (cổng)",
+    "examples": [
+      "閉める (Đóng lại)",
+      "閉店 (Đóng cửa hàng)",
+      "閉会 (Bế mạc)"
+    ]
+  },
+  {
+    "id": "87",
+    "kanji": "持",
+    "meaning": "cầm",
+    "onyomi": "ジ (ji)",
+    "kunyomi": "もつ (motsu)",
+    "radical": "手 (tay)",
+    "examples": [
+      "持つ (Cầm)",
+      "持ち物 (Đồ mang theo)",
+      "持参 (Mang theo)"
+    ]
+  },
+  {
+    "id": "88",
+    "kanji": "使",
+    "meaning": "sử dụng",
+    "onyomi": "シ (shi)",
+    "kunyomi": "つかう (tsukau)",
+    "radical": "人 (người)",
+    "examples": [
+      "使う (Sử dụng)",
+      "使用 (Sử dụng)",
+      "大使 (Đại sứ)"
+    ]
+  },
+  {
+    "id": "89",
+    "kanji": "切",
+    "meaning": "cắt",
+    "onyomi": "セツ (setsu)",
+    "kunyomi": "きる (kiru)",
+    "radical": "刀 (đao)",
+    "examples": [
+      "切る (Cắt)",
+      "切手 (Tem thư)",
+      "大切 (Quan trọng)"
+    ]
+  },
+  {
+    "id": "90",
+    "kanji": "着",
+    "meaning": "mặc",
+    "onyomi": "チャク (chaku)",
+    "kunyomi": "きる (kiru)",
+    "radical": "羊 (cừu)",
+    "examples": [
+      "着る (Mặc quần áo)",
+      "着物 (Kimono)",
+      "到着 (Đến nơi)"
+    ]
+  },
+  {
+    "id": "91",
+    "kanji": "脱",
+    "meaning": "cởi",
+    "onyomi": "ダツ (datsu)",
+    "kunyomi": "ぬぐ (nugu)",
+    "radical": "肉 (thịt)",
+    "examples": [
+      "脱ぐ (Cởi ra)",
+      "脱衣所 (Phòng thay đồ)",
+      "脱出 (Trốn thoát)"
+    ]
+  },
+  {
+    "id": "92",
+    "kanji": "洗",
+    "meaning": "rửa",
+    "onyomi": "セン (sen)",
+    "kunyomi": "あらう (arau)",
+    "radical": "水 (nước)",
+    "examples": [
+      "洗う (Rửa)",
+      "洗濯 (Giặt giũ)",
+      "洗面所 (Phòng rửa mặt)"
+    ]
+  },
+  {
+    "id": "93",
+    "kanji": "浴",
+    "meaning": "tắm",
+    "onyomi": "ヨク (yoku)",
+    "kunyomi": "あびる (abiru)",
+    "radical": "水 (nước)",
+    "examples": [
+      "浴びる (Tắm)",
+      "浴室 (Phòng tắm)",
+      "日光浴 (Tắm nắng)"
+    ]
+  },
+  {
+    "id": "94",
+    "kanji": "消",
+    "meaning": "xóa / mất",
+    "onyomi": "ショウ (shou)",
+    "kunyomi": "きえる (kieru)",
+    "radical": "水 (nước)",
+    "examples": [
+      "消える (Mất đi)",
+      "消しゴム (Cục tẩy)",
+      "消費 (Tiêu thụ)"
+    ]
+  },
+  {
+    "id": "95",
+    "kanji": "点",
+    "meaning": "điểm",
+    "onyomi": "テン (ten)",
+    "kunyomi": "つける (tsukeru)",
+    "radical": "火 (lửa)",
+    "examples": [
+      "点をつける (Chấm điểm)",
+      "点数 (Điểm số)",
+      "終点 (Điểm cuối)"
+    ]
+  },
+  {
+    "id": "96",
+    "kanji": "線",
+    "meaning": "đường thẳng",
+    "onyomi": "セン (sen)",
+    "kunyomi": "すじ (suji)",
+    "radical": "糸 (sợi)",
+    "examples": [
+      "線を引く (Vẽ đường thẳng)",
+      "路線 (Tuyến đường)",
+      "直線 (Đường thẳng)"
+    ]
+  },
+  {
+    "id": "97",
+    "kanji": "色",
+    "meaning": "màu",
+    "onyomi": "ショク (shoku)",
+    "kunyomi": "いろ (iro)",
+    "radical": "色 (màu)",
+    "examples": [
+      "色を選ぶ (Chọn màu)",
+      "色紙 (Giấy màu)",
+      "特色 (Đặc trưng)"
+    ]
+  },
+  {
+    "id": "98",
+    "kanji": "光",
+    "meaning": "ánh sáng",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "ひかる (hikaru)",
+    "radical": "光 (ánh sáng)",
+    "examples": [
+      "光る (Sáng lên)",
+      "日光 (Ánh nắng)",
+      "観光 (Du lịch)"
+    ]
+  },
+  {
+    "id": "99",
+    "kanji": "音",
+    "meaning": "âm thanh",
+    "onyomi": "オン (on)",
+    "kunyomi": "おと (oto)",
+    "radical": "音 (âm thanh)",
+    "examples": [
+      "音を聞く (Nghe âm thanh)",
+      "音楽 (Âm nhạc)",
+      "足音 (Tiếng bước chân)"
+    ]
+  },
+  {
+    "id": "100",
+    "kanji": "風",
+    "meaning": "gió",
+    "onyomi": "フウ (fuu)",
+    "kunyomi": "かぜ (kaze)",
+    "radical": "風 (gió)",
+    "examples": [
+      "風が吹く (Gió thổi)",
+      "台風 (Bão)",
+      "風景 (Phong cảnh)"
+    ]
+  }
+]

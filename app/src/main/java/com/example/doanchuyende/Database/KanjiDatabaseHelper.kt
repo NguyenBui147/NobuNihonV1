@@ -36,7 +36,8 @@ class KanjiDatabaseHelper(private val context: Context) {
                     meaning = jsonObject.getString("meaning"),
                     onyomi = jsonObject.getString("onyomi"),
                     kunyomi = jsonObject.getString("kunyomi"),
-                    examples = examples
+                    examples = examples,
+                    radical = jsonObject.optString("radical", "")
                 )
                 kanjiList.add(kanji)
             }
@@ -54,11 +55,14 @@ class KanjiDatabaseHelper(private val context: Context) {
     }
 
     fun searchKanji(query: String): List<KanjiModel> {
-        return kanjiList.filter { 
-            it.kanji.contains(query, ignoreCase = true) ||
-            it.meaning.contains(query, ignoreCase = true) ||
-            it.onyomi.contains(query, ignoreCase = true) ||
-            it.kunyomi.contains(query, ignoreCase = true)
+        return kanjiList.filter {
+            it.meaning.contains(query, ignoreCase = true)
+        }
+    }
+
+    fun filterKanji(mean: String?, radical: String?): List<KanjiModel> {
+        return kanjiList.filter {
+            radical.isNullOrBlank() || it.radical.contains(radical!!, ignoreCase = true)
         }
     }
 } 
