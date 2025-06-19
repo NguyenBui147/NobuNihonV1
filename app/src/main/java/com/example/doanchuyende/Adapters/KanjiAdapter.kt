@@ -57,6 +57,6 @@ class KanjiAdapter(private val kanjiList: MutableList<KanjiModel>) :
     fun updateList(newList: List<KanjiModel>) {
         kanjiList.clear()
         kanjiList.addAll(newList)
-
+        notifyDataSetChanged()
     }
 }

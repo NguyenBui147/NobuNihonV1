@@ -18,7 +18,7 @@ class KanjiDatabaseHelper(private val context: Context) {
 
     private fun loadKanjiFromJson() {
         try {
-            val jsonString = context.assets.open("kanji_list.json").bufferedReader().use { it.readText() }
+            val jsonString = context.assets.open("kanji_list_100.json").bufferedReader().use { it.readText() }
             val jsonArray = JSONArray(jsonString)
             
             for (i in 0 until jsonArray.length()) {
@@ -54,15 +54,5 @@ class KanjiDatabaseHelper(private val context: Context) {
         return kanjiList.find { it.id == id }
     }
 
-    fun searchKanji(query: String): List<KanjiModel> {
-        return kanjiList.filter {
-            it.meaning.contains(query, ignoreCase = true)
-        }
-    }
 
-    fun filterKanji(mean: String?, radical: String?): List<KanjiModel> {
-        return kanjiList.filter {
-            radical.isNullOrBlank() || it.radical.contains(radical!!, ignoreCase = true)
-        }
-    }
 } 
