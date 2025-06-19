@@ -1,7 +1,6 @@
 package com.example.doanchuyende.Fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +28,6 @@ class HiraganaFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-        Log.d("HiraganaFragment", "onCreate")
     }
 
     override fun onCreateView(
@@ -37,7 +35,6 @@ class HiraganaFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("HiraganaFragment", "onCreateView")
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hiragana, container, false)
     }

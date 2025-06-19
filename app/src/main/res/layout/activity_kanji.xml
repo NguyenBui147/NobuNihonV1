@@ -32,9 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <androidx.appcompat.widget.SearchView
-            android:layout_margin="20dp"
+            android:layout_margin="16dp"
             android:id="@+id/searchView"
-            android:backgroundTint="@color/snow"
             android:background="@drawable/rounded_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

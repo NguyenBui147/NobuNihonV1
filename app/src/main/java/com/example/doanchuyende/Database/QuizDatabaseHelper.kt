@@ -4,7 +4,6 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.util.Log
 import com.example.doanchuyende.Models.QuizModel
 import com.example.doanchuyende.Models.Question
 import org.json.JSONArray
@@ -63,11 +62,8 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
                 )
                 questionList.add(question)
             }
-            Log.d("Database", "Loaded ${jsonArray.length()} questions from $fileName")
         } catch (e: IOException) {
-            Log.e("Database", "Error reading JSON file $fileName: ${e.message}")
         } catch (e: Exception) {
-            Log.e("Database", "Error parsing JSON file $fileName: ${e.message}")
         }
     }
 
@@ -98,10 +94,8 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
 
             db.execSQL(createQuizTable)
             db.execSQL(createQuestionTable)
-            Log.d("Database", "Quiz and Question tables created successfully")
 
         } catch (e: Exception) {
-            Log.e("Database", "Error creating tables: ${e.message}")
         }
     }
 
@@ -109,9 +103,7 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         try {
             db.execSQL("DROP TABLE IF EXISTS $TABLE_QUIZ")
             onCreate(db)
-            Log.d("Database", "Database upgraded successfully")
         } catch (e: Exception) {
-            Log.e("Database", "Error upgrading database: ${e.message}")
         }
     }
 
@@ -138,16 +130,12 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
                 }
                 val result = db.insert(TABLE_QUIZ, null, values)
                 if (result != -1L) {
-                    Log.d("Database", "Quiz added successfully: ${quiz.title}")
                 } else {
-                    Log.e("Database", "Failed to add quiz: ${quiz.title}")
                 }
             } else {
-                Log.d("Database", "Quiz already exists: ${quiz.title}")
             }
             cursor.close()
         } catch (e: Exception) {
-            Log.e("Database", "Error adding quiz: ${e.message}")
         }
     }
 
@@ -166,14 +154,11 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
                         cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DURATION))
                     )
                     quizList.add(quiz)
-                    Log.d("Database", "Retrieved quiz: ${quiz.title}")
                 } while (cursor.moveToNext())
             } else {
-                Log.d("Database", "No quizzes found in database")
             }
             cursor.close()
         } catch (e: Exception) {
-            Log.e("Database", "Error getting quizzes: ${e.message}")
         }
         return quizList
     }
@@ -209,6 +194,5 @@ class QuizDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
 
     fun insertQuestions(context: Context) {
         // Không cần làm gì vì câu hỏi đã được load trong init block
-        Log.d("Database", "Questions loaded from JSON files")
     }
 }

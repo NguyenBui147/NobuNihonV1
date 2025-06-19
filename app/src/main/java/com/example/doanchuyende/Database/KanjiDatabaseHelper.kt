@@ -1,7 +1,6 @@
 package com.example.doanchuyende.Database
 
 import android.content.Context
-import android.util.Log
 import com.example.doanchuyende.Models.KanjiModel
 import org.json.JSONArray
 import org.json.JSONObject
@@ -41,11 +40,8 @@ class KanjiDatabaseHelper(private val context: Context) {
                 )
                 kanjiList.add(kanji)
             }
-            Log.d("KanjiDatabase", "Loaded ${jsonArray.length()} kanji from kanji_list.json")
         } catch (e: IOException) {
-            Log.e("KanjiDatabase", "Error reading JSON file kanji_list.json: ${e.message}")
         } catch (e: Exception) {
-            Log.e("KanjiDatabase", "Error parsing JSON file kanji_list.json: ${e.message}")
         }
     }
 
